@@ -10,12 +10,13 @@ package com.mycompany.classes;
  *
  * @author santi
  */
-public class ListaEstudiante {
+public class ListaEstudiante implements IListaEnlazadaTDA{
 
     private Node primero;
     private Node ultimo;
     public int cantidad;
 
+    @Override
     public Node getPrimero() {
         return primero;
     }
@@ -24,6 +25,7 @@ public class ListaEstudiante {
         this.primero = primero;
     }
 
+    @Override
     public Node getUltimo() {
         return ultimo;
     }
@@ -32,6 +34,38 @@ public class ListaEstudiante {
         this.ultimo = ultimo;
     }
     
+    @Override
+    public void agregar(String nombre, int age){
+        
+    }
+    
+    @Override
+    public Node find(int index){
+        
+        return null;
+        
+    }
+    
+    @Override
+    public void delete(int index){
+        
+    }
+    
+    
+    @Override
+    public void deletePrimero(){
+        
+    }
+    
+    @Override
+    public void deleteUltimo(){
+        
+    }
+    
+    @Override
+    public void vaciar(){
+        
+    }
     
     public void print() {
         
