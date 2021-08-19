@@ -12,4 +12,8 @@ package com.mycompany.classes;
  */
 public class ListaEstudiante {
 
+    private Node primero;
+    private Node ultimo;
+    public int cantidad;
+    
 }

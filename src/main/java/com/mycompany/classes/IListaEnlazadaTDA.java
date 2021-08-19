@@ -3,13 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package com.mycompany.classes;
 
 /**
  *
  * @author santi
  */
-public class IListaEnlazadaTDA {
-
+public interface IListaEnlazadaTDA {
+    
 }
