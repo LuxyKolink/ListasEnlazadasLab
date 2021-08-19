@@ -14,7 +14,7 @@ public class ListaEstudiante implements IListaEnlazadaTDA{
 
     private Node primero;
     private Node ultimo;
-    public int cantidad;
+    private int cantidad;
 
     @Override
     public Node getPrimero() {
@@ -34,6 +34,15 @@ public class ListaEstudiante implements IListaEnlazadaTDA{
         this.ultimo = ultimo;
     }
     
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
+    }
+
+    
     @Override
     public void agregar(String nombre, int age){
         
@@ -42,9 +51,31 @@ public class ListaEstudiante implements IListaEnlazadaTDA{
     @Override
     public Node find(int index){
         
-        return null;
+        if (primero == null){
+            return null;
+        } 
+        else 
+        {
+            Node current = getPrimero();
+            int contador = 0;
+            while (contador < index && current != null){
+                current = current.getSiguiente();
+                contador++;
+            }
+            if (contador != index)
+            {
+                return null;
+            }
+            else 
+            {
+                return current;
+                }
+            }
+        }
+
+       
         
-    }
+  
     
     @Override
     public void delete(int index){
@@ -80,4 +111,5 @@ public class ListaEstudiante implements IListaEnlazadaTDA{
             System.out.println("Empty list!");
         }
     }
+
 }
