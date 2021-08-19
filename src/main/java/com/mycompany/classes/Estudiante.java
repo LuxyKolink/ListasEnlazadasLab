@@ -4,12 +4,12 @@
  * and open the template in the editor.
  */
 
-package com.mycompany.simplelinkedlistlab;
+package com.mycompany.classes;
 
 /**
  *
  * @author santi
  */
-public class MainClass {
+public class Estudiante {
 
 }
