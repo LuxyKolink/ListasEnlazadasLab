@@ -12,4 +12,24 @@ package com.mycompany.classes;
  */
 public class Node {
 
+    private Estudiante value;
+    private Node siguiente;
+
+    public Estudiante getValue() {
+        return value;
+    }
+
+    public void setValue(Estudiante value) {
+        this.value = value;
+    }
+
+    public Node getSiguiente() {
+        return siguiente;
+    }
+
+    public void setSiguiente(Node siguiente) {
+        this.siguiente = siguiente;
+    }
+    
+    
 }
