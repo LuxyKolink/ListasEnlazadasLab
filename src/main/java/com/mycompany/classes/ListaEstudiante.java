@@ -50,10 +50,19 @@ public class ListaEstudiante implements IListaEnlazadaTDA{
         
         Node node = new Node(estudiante);
        
-        
+        /*
+        if (this.primero == null){
+            this.primero = new Node(estudiante);
+            Node ultimo = getPrimero();
+        } else {
+            Node newNode = new Node(estudiante);
+            this.ultimo = newNode;
+            ultimo = this.ultimo;
+        }
+        */
         
        if (this.primero == null) {
-            this.primero = node;
+            this.primero = new Node(estudiante);
         } else {
            
            Node ultimo = getPrimero();
@@ -67,7 +76,6 @@ public class ListaEstudiante implements IListaEnlazadaTDA{
        }
         this.cantidad++;
     }
-    
     @Override
     public Node find(int index){
         
