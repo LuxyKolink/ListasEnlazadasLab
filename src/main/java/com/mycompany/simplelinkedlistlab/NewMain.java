@@ -19,6 +19,9 @@ public class NewMain {
         
         ListaEstudiante list = new ListaEstudiante();
         list.agregar("mamahuevo", 23);
+        list.agregar("pablo", 11);
+        list.print();
+        //System.out.println("lista"+ list.agregar(mamahuevo, ));
     }
   
 }

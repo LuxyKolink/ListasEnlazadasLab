@@ -13,7 +13,7 @@ package com.mycompany.classes;
 public class Node {
 
     private Estudiante value;
-    Node siguiente;
+    private Node siguiente;
     public Node(Estudiante value){
         this.value=value;
     }

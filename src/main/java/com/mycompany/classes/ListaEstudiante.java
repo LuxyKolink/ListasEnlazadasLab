@@ -62,7 +62,7 @@ public class ListaEstudiante implements IListaEnlazadaTDA{
         */
         
        if (this.primero == null) {
-            this.primero = new Node(estudiante);
+            this.primero = node;
         } else {
            
            Node ultimo = getPrimero();
@@ -75,6 +75,7 @@ public class ListaEstudiante implements IListaEnlazadaTDA{
            
        }
         this.cantidad++;
+        
     }
     @Override
     public Node find(int index){
@@ -133,7 +134,7 @@ public class ListaEstudiante implements IListaEnlazadaTDA{
         if (getPrimero() != null) {
             do {
                 System.out.println("* Nombre:" + current.getValue().getNombre()+" /edad: "+current.getValue().getEdad());
-
+                current = current.getSiguiente();
             } while (current != null);
         } else {
             System.out.println("Empty list!");
