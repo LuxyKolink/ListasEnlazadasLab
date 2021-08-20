@@ -124,7 +124,8 @@ public class ListaEstudiante implements IListaEnlazadaTDA{
     
     @Override
     public void vaciar(){
-        
+        this.primero = null;
+        this.cantidad = 0;
     }
     
     public void print() {
