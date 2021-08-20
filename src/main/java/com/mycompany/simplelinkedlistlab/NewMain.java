@@ -5,18 +5,20 @@
  */
 
 package com.mycompany.simplelinkedlistlab;
+import com.mycompany.classes.IListaEnlazadaTDA;
+import com.mycompany.classes.ListaEstudiante;
+import java.util.LinkedList;
 
 /**
  *
  * @author santi
  */
 public class NewMain {
-
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
-        String p;
+        
+        ListaEstudiante list = new ListaEstudiante();
+        list.agregar("mamahuevo", 23);
     }
   
 }

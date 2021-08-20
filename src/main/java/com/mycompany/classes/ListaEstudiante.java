@@ -44,8 +44,28 @@ public class ListaEstudiante implements IListaEnlazadaTDA{
 
     
     @Override
-    public void agregar(String nombre, int age){
+    public void agregar(String nombre, int edad){
         
+        Estudiante estudiante = new Estudiante(nombre,edad);
+        
+        Node node = new Node(estudiante);
+       
+        
+        
+       if (this.primero == null) {
+            this.primero = node;
+        } else {
+           
+           Node ultimo = getPrimero();
+           
+           while(ultimo.getSiguiente() != null){
+               ultimo = ultimo.getSiguiente();
+               
+           }
+           ultimo.setSiguiente(node);
+           
+       }
+        this.cantidad++;
     }
     
     @Override

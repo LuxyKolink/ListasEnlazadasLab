@@ -14,6 +14,9 @@ public class Node {
 
     private Estudiante value;
     private Node siguiente;
+    public Node(Estudiante value){
+        this.value=value;
+    }
 
     public Estudiante getValue() {
         return value;
